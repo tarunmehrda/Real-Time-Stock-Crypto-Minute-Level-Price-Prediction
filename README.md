@@ -821,35 +821,6 @@ model:
     patience: 10
 ```
 
-### 📡 Data Configuration
-
-```yaml
-# config/data_config.yaml
-data:
-  sources:
-    exchanges:
-      - name: binance
-        weight: 0.4
-      - name: coinbase
-        weight: 0.3
-      - name: kraken
-        weight: 0.3
-    
-  symbols:
-    crypto: [BTC-USD, ETH-USD, BNB-USD]
-    stocks: [AAPL, GOOGL, TSLA, MSFT]
-    
-  intervals: [1m, 5m, 15m, 1h]
-  
-  features:
-    technical_indicators: true
-    sentiment_analysis: true
-    volume_profile: true
-    order_book: true
-```
-
----
-
 ## 🧪 Testing & Quality
 
 ```bash
@@ -1084,55 +1055,3 @@ Join our community of developers making financial AI accessible to everyone.
 ```
 
 ---
-
-## 🎓 Use Cases
-
-<table>
-<tr>
-<td width="50%">
-
-### 👨‍💼 **For Traders**
-
-🎯 **Day Trading**
-- Minute-level entry/exit signals
-- Real-time price predictions
-- Risk management tools
-
-⚡ **Scalping**
-- Ultra-short-term forecasts
-- High-frequency signals
-- Low-latency execution
-
-📊 **Swing Trading**
-- Multi-timeframe analysis
-- Trend prediction
-- Position sizing
-
-💼 **Portfolio Management**
-- Asset allocation
-- Rebalancing signals
-- Risk assessment
-
-</td>
-<td width="50%">
-
-### 👨‍💻 **For Developers**
-
-🔌 **API Integration**
-- RESTful endpoints
-- WebSocket streams
-- Python SDK
-
-🤖 **Trading Bots**
-- Automated strategies
-- Signal generation
-- Backtesting framework
-
-📚 **Research**
-- ML model experimentation
-- Feature engineering
-- Strategy development
-
-🎨 **Custom Applications**
-- White-label solutions
--
