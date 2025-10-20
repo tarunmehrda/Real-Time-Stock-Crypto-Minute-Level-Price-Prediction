@@ -883,36 +883,6 @@ isort src/
 
 ---
 
-## 🚀 Deployment
-
-### 🐳 Docker Deployment
-
-```bash
-# Production build
-docker build -t crypto-predictor:prod -f Dockerfile.prod .
-
-# Run with docker-compose
-docker-compose -f docker-compose.prod.yml up -d
-
-# Scale services
-docker-compose -f docker-compose.prod.yml up -d --scale worker=4
-```
-
-### ☸️ Kubernetes Deployment
-
-```bash
-# Apply configurations
-kubectl apply -f k8s/namespace.yaml
-kubectl apply -f k8s/deployment.yaml
-kubectl apply -f k8s/service.yaml
-kubectl apply -f k8s/ingress.yaml
-
-# Scale replicas
-kubectl scale deployment crypto-predictor --replicas=5
-
-# Check status
-kubectl get pods -n crypto-predictor
-```
 
 ### ☁️ Cloud Platforms
 
@@ -1011,47 +981,5 @@ Join our community of developers making financial AI accessible to everyone.
 </tr>
 </table>
 
-### 🏆 Top Contributors
-
-<a href="https://github.com/tarunmehrda/Real-Time-Stock-Crypto-Minute-Level-Price-Prediction/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=tarunmehrda/Real-Time-Stock-Crypto-Minute-Level-Price-Prediction" />
-</a>
-
----
-
-## 📈 Roadmap
-
-<div align="center">
-
-### 🎯 **Future Vision**
-
-</div>
-
-```
-2024 Q4  ✅ Initial Release
-          ✅ Core prediction engine
-          ✅ REST API
-          ✅ Basic UI
-
-2025 Q1  🔄 In Progress
-          🔄 Options & Futures support
-          🔄 Advanced charting
-          🔄 Mobile app beta
-
-2025 Q2  📋 Planned
-          📋 Portfolio optimization
-          📋 Automated trading bots
-          📋 Social trading features
-
-2025 Q3  📋 Planned
-          📋 Reinforcement learning
-          📋 Multi-strategy backtesting
-          📋 API marketplace
-
-2025 Q4  💡 Ideas
-          💡 DeFi integration
-          💡 NFT analytics
-          💡 AI strategy generator
-```
 
 ---
